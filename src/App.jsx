@@ -16,7 +16,7 @@ function App() {
   }
 
   const getUser = () => {
-    const url = "http://users-crud.academlo.tech/users/"
+    const url = "https://users-crud.academlo.tech/users/"
     axios.get(url)
     .then(res => { 
       setUsers(res.data)
@@ -29,7 +29,7 @@ function App() {
     }, [])
     
     const newUser = (data) => {
-      const url = "http://users-crud.academlo.tech/users/"
+      const url = "https://users-crud.academlo.tech/users/"
 
       axios.post(url, data)
       .then(res => {
@@ -41,7 +41,7 @@ function App() {
     }
 
     const delUser = (id) => {
-      const url  = `http://users-crud.academlo.tech/users/${id}/`
+      const url  = `https://users-crud.academlo.tech/users/${id}/`
       axios.delete(url)
       .then(res =>{
         console.log("Se eliminó")
@@ -51,7 +51,7 @@ function App() {
     } 
 
     const upUser = (data) => {
-      const url = `http://users-crud.academlo.tech/users/${data.id}/`
+      const url = `https://users-crud.academlo.tech/users/${data.id}/`
       axios.put(url, data)
       .then(res =>{ 
         console.log("uppdate complete :p")
