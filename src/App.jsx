@@ -35,6 +35,7 @@ function App() {
       .then(res => {
         console.log(res.data)
         getUser()
+        setShowForm()
       })
       .catch(err => console.log(err))
     }
@@ -56,6 +57,8 @@ function App() {
         console.log("uppdate complete :p")
         getUser("")
         setUppUser("")
+        seeForm()
+        setShowForm()
       })
       .catch(err => console.log(err))
     }

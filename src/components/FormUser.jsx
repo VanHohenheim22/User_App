@@ -78,7 +78,7 @@ const FormUser = ({ newUser, uppUser, upUser, showForm, seeForm, setUppUser }) =
         <input {...register("birthday")} type="date" placeholder='enter a birthday'required/>
     </div>
 
-    <button onClick={() => seeForm(showForm)}>{ uppUser ? "Agregar cambios" : "Crear unevo usuario " }</button>
+    <button >{ uppUser ? "Agregar cambios" : "Crear unevo usuario " }</button>
   </form>
 </div>
 </div>: ""}
